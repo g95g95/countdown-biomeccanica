@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Countdown · Visita biomeccanica</title>
-<meta name="description" content="Countdown per la visita biomeccanica da Brian's il grande ciclismo, 4 settembre 2026 ore 9:30">
+<title>Fabio è tornato</title>
+<meta name="description" content="Fabio è tornato. Gioite del ritorno di Fabio.">
 <style>
   :root {
     --green: #00ff41;
@@ -70,9 +70,29 @@
 
   @keyframes blink { to { visibility: hidden; } }
 
+  #qr {
+    position: fixed;
+    right: 2vmin; bottom: 2vmin;
+    display: flex; flex-direction: column; align-items: center; gap: 0.6em;
+    padding: 1.1vmin;
+    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid var(--green-soft);
+    box-shadow: 0 0 22px rgba(0, 255, 65, 0.22);
+    text-decoration: none;
+    color: inherit;
+  }
+  #qr svg { display: block; width: clamp(96px, 12vmin, 168px); height: auto; }
+  #qr span {
+    font-size: clamp(0.5rem, 0.75vw, 0.72rem);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
   @media (max-width: 760px) {
     #panel { width: 92vw; }
     #clock { font-size: clamp(1.8rem, 11vw, 4rem); }
+    #qr svg { width: 88px; }
   }
 </style>
 </head>
@@ -80,7 +100,7 @@
 <canvas id="rain" aria-hidden="true"></canvas>
 
 <main id="panel">
-  <p class="kicker">Visita biomeccanica<strong>Brian's il grande ciclismo</strong></p>
+  <p class="kicker">Fabio è tornato.<strong>Gioite del ritorno di Fabio.</strong></p>
 
   <div id="clock" role="timer">
     <div class="unit" id="u-days"><b id="d">00</b><span>giorni</span></div>
@@ -91,10 +111,18 @@
     <div class="sep">:</div>
     <div class="unit"><b id="s">00</b><span>sec</span></div>
   </div>
-  <div id="done">È ORA!</div>
+  <div id="done">GIOITE!</div>
 
   <p class="when" id="when"></p>
 </main>
+
+<a id="qr" href="https://g95g95.github.io/countdown-biomeccanica/" title="Fabio è tornato. Gioite del ritorno di Fabio.">
+  <svg viewBox="-4 -4 41 41" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code del sito">
+    <rect x="-4" y="-4" width="41" height="41" fill="#d9ffe3"></rect>
+    <path fill="#04140a" d="M0 0h7v1h-7zM9 0h1v1h-1zM11 0h1v1h-1zM14 0h1v1h-1zM16 0h1v1h-1zM18 0h2v1h-2zM22 0h3v1h-3zM26 0h7v1h-7zM0 1h1v1h-1zM6 1h1v1h-1zM9 1h3v1h-3zM15 1h1v1h-1zM18 1h1v1h-1zM21 1h1v1h-1zM26 1h1v1h-1zM32 1h1v1h-1zM0 2h1v1h-1zM2 2h3v1h-3zM6 2h1v1h-1zM8 2h4v1h-4zM14 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM21 2h2v1h-2zM24 2h1v1h-1zM26 2h1v1h-1zM28 2h3v1h-3zM32 2h1v1h-1zM0 3h1v1h-1zM2 3h3v1h-3zM6 3h1v1h-1zM8 3h1v1h-1zM11 3h2v1h-2zM18 3h1v1h-1zM22 3h3v1h-3zM26 3h1v1h-1zM28 3h3v1h-3zM32 3h1v1h-1zM0 4h1v1h-1zM2 4h3v1h-3zM6 4h1v1h-1zM8 4h1v1h-1zM11 4h2v1h-2zM14 4h4v1h-4zM20 4h2v1h-2zM23 4h1v1h-1zM26 4h1v1h-1zM28 4h3v1h-3zM32 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM8 5h2v1h-2zM11 5h2v1h-2zM14 5h1v1h-1zM17 5h1v1h-1zM19 5h1v1h-1zM21 5h2v1h-2zM24 5h1v1h-1zM26 5h1v1h-1zM32 5h1v1h-1zM0 6h7v1h-7zM8 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM20 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h7v1h-7zM8 7h1v1h-1zM12 7h1v1h-1zM16 7h1v1h-1zM18 7h6v1h-6zM0 8h1v1h-1zM2 8h5v1h-5zM9 8h1v1h-1zM11 8h4v1h-4zM17 8h1v1h-1zM19 8h1v1h-1zM23 8h1v1h-1zM26 8h5v1h-5zM0 9h1v1h-1zM5 9h1v1h-1zM8 9h1v1h-1zM10 9h1v1h-1zM13 9h1v1h-1zM16 9h6v1h-6zM23 9h2v1h-2zM26 9h2v1h-2zM29 9h2v1h-2zM32 9h1v1h-1zM0 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM8 10h2v1h-2zM11 10h1v1h-1zM13 10h5v1h-5zM20 10h1v1h-1zM25 10h2v1h-2zM28 10h1v1h-1zM30 10h2v1h-2zM0 11h1v1h-1zM2 11h2v1h-2zM5 11h1v1h-1zM7 11h2v1h-2zM11 11h1v1h-1zM13 11h1v1h-1zM15 11h4v1h-4zM20 11h4v1h-4zM25 11h1v1h-1zM28 11h5v1h-5zM0 12h2v1h-2zM3 12h2v1h-2zM6 12h4v1h-4zM11 12h1v1h-1zM14 12h3v1h-3zM20 12h1v1h-1zM22 12h1v1h-1zM24 12h2v1h-2zM27 12h3v1h-3zM31 12h1v1h-1zM0 13h3v1h-3zM4 13h1v1h-1zM7 13h1v1h-1zM9 13h3v1h-3zM15 13h1v1h-1zM17 13h2v1h-2zM23 13h1v1h-1zM26 13h1v1h-1zM29 13h1v1h-1zM31 13h2v1h-2zM0 14h2v1h-2zM3 14h7v1h-7zM11 14h2v1h-2zM14 14h3v1h-3zM18 14h1v1h-1zM20 14h1v1h-1zM22 14h1v1h-1zM25 14h2v1h-2zM28 14h1v1h-1zM31 14h1v1h-1zM0 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM10 15h2v1h-2zM15 15h1v1h-1zM21 15h1v1h-1zM24 15h3v1h-3zM28 15h1v1h-1zM30 15h1v1h-1zM2 16h2v1h-2zM5 16h2v1h-2zM12 16h2v1h-2zM15 16h3v1h-3zM20 16h1v1h-1zM22 16h1v1h-1zM24 16h2v1h-2zM27 16h2v1h-2zM32 16h1v1h-1zM0 17h1v1h-1zM2 17h2v1h-2zM5 17h1v1h-1zM7 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM16 17h1v1h-1zM18 17h4v1h-4zM23 17h1v1h-1zM26 17h2v1h-2zM29 17h4v1h-4zM0 18h2v1h-2zM5 18h2v1h-2zM10 18h3v1h-3zM14 18h3v1h-3zM18 18h1v1h-1zM21 18h1v1h-1zM25 18h1v1h-1zM27 18h2v1h-2zM30 18h2v1h-2zM0 19h2v1h-2zM3 19h1v1h-1zM5 19h1v1h-1zM7 19h1v1h-1zM9 19h1v1h-1zM16 19h1v1h-1zM21 19h2v1h-2zM25 19h1v1h-1zM27 19h6v1h-6zM0 20h1v1h-1zM2 20h1v1h-1zM5 20h2v1h-2zM9 20h1v1h-1zM13 20h1v1h-1zM18 20h2v1h-2zM24 20h2v1h-2zM27 20h3v1h-3zM31 20h2v1h-2zM0 21h2v1h-2zM7 21h2v1h-2zM11 21h1v1h-1zM13 21h5v1h-5zM20 21h2v1h-2zM23 21h1v1h-1zM26 21h1v1h-1zM29 21h1v1h-1zM32 21h1v1h-1zM0 22h1v1h-1zM3 22h2v1h-2zM6 22h2v1h-2zM10 22h1v1h-1zM12 22h2v1h-2zM17 22h1v1h-1zM19 22h1v1h-1zM22 22h1v1h-1zM25 22h1v1h-1zM29 22h3v1h-3zM0 23h1v1h-1zM4 23h2v1h-2zM7 23h2v1h-2zM11 23h2v1h-2zM14 23h1v1h-1zM16 23h1v1h-1zM19 23h12v1h-12zM0 24h1v1h-1zM4 24h1v1h-1zM6 24h2v1h-2zM9 24h2v1h-2zM14 24h1v1h-1zM17 24h3v1h-3zM22 24h1v1h-1zM24 24h5v1h-5zM8 25h2v1h-2zM12 25h1v1h-1zM14 25h1v1h-1zM16 25h5v1h-5zM23 25h2v1h-2zM28 25h1v1h-1zM30 25h1v1h-1zM32 25h1v1h-1zM0 26h7v1h-7zM10 26h3v1h-3zM14 26h4v1h-4zM22 26h3v1h-3zM26 26h1v1h-1zM28 26h1v1h-1zM30 26h2v1h-2zM0 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM10 27h1v1h-1zM13 27h2v1h-2zM17 27h2v1h-2zM20 27h3v1h-3zM24 27h1v1h-1zM28 27h3v1h-3zM0 28h1v1h-1zM2 28h3v1h-3zM6 28h1v1h-1zM8 28h1v1h-1zM14 28h3v1h-3zM21 28h1v1h-1zM24 28h6v1h-6zM31 28h1v1h-1zM0 29h1v1h-1zM2 29h3v1h-3zM6 29h1v1h-1zM8 29h1v1h-1zM11 29h2v1h-2zM15 29h1v1h-1zM17 29h2v1h-2zM23 29h2v1h-2zM28 29h1v1h-1zM30 29h3v1h-3zM0 30h1v1h-1zM2 30h3v1h-3zM6 30h1v1h-1zM8 30h1v1h-1zM13 30h5v1h-5zM21 30h1v1h-1zM25 30h3v1h-3zM0 31h1v1h-1zM6 31h1v1h-1zM9 31h2v1h-2zM12 31h1v1h-1zM15 31h1v1h-1zM21 31h2v1h-2zM28 31h3v1h-3zM0 32h7v1h-7zM8 32h1v1h-1zM11 32h2v1h-2zM15 32h1v1h-1zM17 32h1v1h-1zM20 32h1v1h-1zM22 32h6v1h-6zM31 32h1v1h-1z"></path>
+  </svg>
+  <span>Inquadrami</span>
+</a>
 
 <script>
 (function () {
@@ -128,7 +156,7 @@
 })();
 
 (function () {
-  var WORDS = ['Ore', '9:30', 'visita', 'biomeccanica', "Brian's", 'il', 'grande', 'ciclismo'];
+  var WORDS = ['Fabio', 'è', 'tornato.', 'Gioite', 'del', 'ritorno', 'di', 'Fabio.'];
   var canvas = document.getElementById('rain');
   var ctx = canvas.getContext('2d');
   var W, H, fontSize, laneW, rowH, cols = [], font;
@@ -158,7 +186,7 @@
     fontSize = Math.max(13, Math.min(20, W / 85));
     font = 'bold ' + fontSize + 'px ' + getComputedStyle(document.body).fontFamily;
     ctx.font = font;
-    laneW = ctx.measureText('biomeccanica').width + fontSize * 0.9;
+    laneW = ctx.measureText('tornato.').width + fontSize * 0.9;
     rowH = fontSize * 1.4;
     cols = [];
     for (var i = 0, n = Math.ceil(W / laneW) + 1; i < n; i++) {

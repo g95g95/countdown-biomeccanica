@@ -23,3 +23,8 @@ Pubblicazione su repo GitHub dedicato + GitHub Pages.
 ## Esito (3 settembre 2026)
 - Repo: https://github.com/g95g95/countdown-biomeccanica
 - Sito: https://g95g95.github.io/countdown-biomeccanica/ (verificato HTTP 200, build Pages "built")
+
+## Aggiornamento (15 settembre 2026)
+- [x] Scritta cambiata in "Fabio è tornato. Gioite del ritorno di Fabio." (titolo, meta, kicker, parole della pioggia, stato finale `GIOITE!`)
+- [x] QR code del sito: SVG inline in basso a destra + `qr.svg` / `qr.png` stand-alone (generati con segno, moduli scuri su fondo chiaro)
+- [x] Verifica: screenshot headless + decodifica del QR dallo screenshot → `https://g95g95.github.io/countdown-biomeccanica/`
