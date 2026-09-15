@@ -3,8 +3,8 @@
 Sito statico con l'annuncio **"Fabio è tornato. Gioite del ritorno di Fabio."** su sfondo a pioggia
 "Matrix": le parole della frase scendono in colonna, a volte nell'ordine giusto, a volte sciolte e slegate.
 
-Il pannello centrale mantiene il countdown a **venerdì 4 settembre 2026, ore 9:30 (ora italiana)**
-(scaduto: mostra *GIOITE!*).
+Il pannello centrale mostra *GIOITE!* e la dicitura generica **Inverno 2027**: nessuna data
+precisa, nessun orario.
 
 Online: <https://g95g95.github.io/countdown-biomeccanica/>
 
@@ -30,5 +30,7 @@ scanner non la leggono.
 
 È un singolo `index.html` senza dipendenze: aprilo nel browser oppure pubblicalo su GitHub Pages.
 
-Per cambiare data/ora modifica `TARGET` in `index.html` (formato ISO con offset del fuso italiano:
-`+02:00` con ora legale, `+01:00` con ora solare).
+La dicitura sotto il messaggio è testo statico in `<p id="when">`. Il countdown è fermo sullo
+stato finale perché `TARGET` (in `index.html`) è una data passata: per riattivarlo basta metterci
+una data futura, in formato ISO con offset del fuso italiano (`+02:00` con ora legale, `+01:00`
+con ora solare).

@@ -113,7 +113,7 @@
   </div>
   <div id="done">GIOITE!</div>
 
-  <p class="when" id="when"></p>
+  <p class="when" id="when">Inverno 2027</p>
 </main>
 
 <a id="qr" href="https://g95g95.github.io/countdown-biomeccanica/" title="Fabio è tornato. Gioite del ritorno di Fabio.">
@@ -126,13 +126,10 @@
 
 <script>
 (function () {
-  // 4 settembre 2026, ore 9:30 Europe/Rome (CEST = UTC+2). Indipendente dal fuso di chi guarda.
+  // Data passata: il countdown resta fermo sullo stato finale e il pannello mostra solo
+  // "Inverno 2027" (testo statico in #when). Per riattivarlo basta una data futura, ISO con
+  // offset del fuso italiano (CEST +02:00, CET +01:00).
   var TARGET = new Date('2026-09-04T09:30:00+02:00');
-
-  document.getElementById('when').textContent =
-    TARGET.toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Rome' })
-    + ' · ore ' +
-    TARGET.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
 
   function byId(id) { return document.getElementById(id); }
   var el = { d: byId('d'), h: byId('h'), m: byId('m'), s: byId('s') };
