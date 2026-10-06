@@ -3,7 +3,10 @@
 Sito statico con l'annuncio **"Fabio è tornato. Gioite del ritorno di Fabio."** su sfondo a pioggia
 "Matrix": le parole della frase scendono in colonna, a volte nell'ordine giusto, a volte sciolte e slegate.
 
-Il pannello centrale mostra *GIOITE!* e la dicitura generica **Inverno 2027**: nessuna data
+Sotto la pioggia c'è un Gabibbo psichedelico (`gabibbo.webp`) che respira e cambia colore, qualche
+colonna di parole impazzisce in arcobaleno e il bordo del pannello gira per tutte le tinte.
+
+Il pannello centrale mostra *GIOITE!* e la dicitura generica **Natale 2026**: nessuna data
 precisa, nessun orario.
 
 Online: <https://g95g95.github.io/countdown-biomeccanica/>
